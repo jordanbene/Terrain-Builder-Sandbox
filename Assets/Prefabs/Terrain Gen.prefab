@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6810033692836396197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6810033692836396192}
+  - component: {fileID: 6810033692836396199}
+  - component: {fileID: 6810033692836396198}
+  - component: {fileID: 777975589}
+  m_Layer: 0
+  m_Name: Terrain Gen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6810033692836396192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810033692836396197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6810033692836396199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810033692836396197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ff158a3711352459cec626b62269cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drawMode: 2
+  editorPreviewLOD: 0
+  noiseScale: 22.42
+  octaves: 8
+  persistance: 0.144
+  lacunarity: 4.72
+  meshHeightMultiplier: 7.87
+  meshHeightCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.13280201
+      outSlope: 0.13280201
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.10132643
+      value: 0.013456354
+      inSlope: 0.17159182
+      outSlope: 0.17159182
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.5075946
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.814237
+      value: 0.48820567
+      inSlope: 2.5153797
+      outSlope: 2.5153797
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9639818
+      value: 1.141816
+      inSlope: 0.70141107
+      outSlope: 0.70141107
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  seed: 83097
+  offset: {x: -218.3, y: 45.37}
+  autoUpdate: 1
+  regions:
+  - name: Water Deep
+    height: 0.01
+    colour: {r: 0.17274247, g: 0.16237983, b: 0.8396226, a: 0}
+  - name: Water Shallow
+    height: 0.1
+    colour: {r: 0.20392156, g: 0.2968392, b: 0.6509804, a: 0}
+  - name: Sand
+    height: 0.15
+    colour: {r: 0.83916366, g: 0.8584906, b: 0.36850303, a: 0}
+  - name: Grass Low
+    height: 0.55
+    colour: {r: 0.27664736, g: 0.6792453, b: 0.1505874, a: 0}
+  - name: Grass High
+    height: 0.6
+    colour: {r: 0.11372549, g: 0.4627451, b: 0.23100922, a: 0}
+  - name: Rock Low
+    height: 0.7
+    colour: {r: 0.16037738, g: 0.11353407, b: 0.034042373, a: 0.92156863}
+  - name: Rock High
+    height: 0.9
+    colour: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 0}
+  - name: Snow
+    height: 1
+    colour: {r: 1, g: 1, b: 1, a: 0}
+--- !u!114 &6810033692836396198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810033692836396197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a3345166eb36504db9619cee0a6a1b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureRender: {fileID: 0}
+  meshFilter: {fileID: 0}
+  meshRenderer: {fileID: 0}
+--- !u!114 &777975589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810033692836396197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac1d31c22cca13419557899a77fc723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detailLevels:
+  - lod: 1
+    visableDstThreshold: 200
+  - lod: 2
+    visableDstThreshold: 400
+  - lod: 3
+    visableDstThreshold: 600
+  mapMaterial: {fileID: 2100000, guid: 9fac5bbefefb40345b54e67b9a37e6f1, type: 2}
+  viewer: {fileID: 0}
